@@ -1,0 +1,389 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #ffe187;
+    color: #111;
+   overflow: hidden;
+  }
+  img{
+    margin-left:140px ;
+}
+ .one{
+    background-color: white;
+    border: 3px solid white;
+    border-radius: 40px;
+     height: 600px;
+    margin: 120px;
+    width:1200px;
+    justify-content: center;
+    position: relative;
+    bottom:50px;
+left:30px;  
+
+}
+  /* Navbar */
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+  }
+  
+  .logo {
+    font-size: 15px;
+    font-weight: bold;
+    position: relative;
+    left:-40px;
+    display:flex ;
+      gap:10px;
+      top: 2px;
+  }
+  
+  .logo span {
+    font-size: 12px;
+    background: linear-gradient(to right, #fca311, #f72585);
+    padding: 2px 6px;
+    border-radius:9999px;
+    color:white ;
+   
+    font-weight: bold;
+    position: relative;
+    
+    left:10px;
+    /* background: linear-gradient(to right, #fca311, #f72585);
+      color: white;
+      padding: 4px 10px;
+      border-radius: 9999px;
+      /* font-size: 0.7rem; 
+      font-size: 12px;
+      font-weight: bold; */
+      
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+
+    color: #111;
+    font-weight: 500;
+    position: relative;
+   left:100px ;
+   
+  }
+  
+  .auth {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .auth a {
+    text-decoration: none;
+    color: #111;
+   position: relative;
+   bottom:2px ;
+   left:130px ;
+  }
+  
+  .auth button {
+    background-color: #407bff;
+    color: white;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left:150px;
+    position: relative;
+    bottom:2px;
+  }
+   .hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 50px;
+    gap: 30px;
+  } 
+  
+   .text-content {
+    flex: 1;
+  }
+  
+  .text-content h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    margin-left: 190px;
+    position: relative;
+    top: 100px;
+  }
+  
+  .text-content p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    line-height: 1.7;
+    position: relative;
+    top: 80px;
+    margin-left: 190px;
+    color: rgb(150, 143, 143);
+  }
+  
+  form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+  
+  form input {
+    padding: 10px;
+   border: 1px solid #ccc;
+    border-radius: 2px;
+   position: relative;
+    top: 70px;
+    margin-left: 190px;
+    width: 350px ;
+  }
+  
+  form button {
+    background-color: #407bff;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+    top: 70px;
+  }
+  
+  small {
+    font-size: 13px;
+    color: #333;
+    position: relative;
+    top: 70px;
+    margin-left: 190px;
+    display: inline;
+  } 
+  small img{
+    width: 15px;
+  }
+  .image {
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+    position: relative;
+    left: 600px;
+    bottom: 250px;
+}
+
+.image img {
+  width: 80%;
+  border-radius: 60% 40% 50% 50%/ 50% 50%  60% 40%  ;
+  object-fit: cover;
+}
+footer {
+    position: relative;
+    bottom:170px;
+     text-align: center;
+     padding: 20px;
+    
+     border-radius: 10px;
+   }
+   
+   footer p {
+     font-size: 14px;
+ bottom:40px ;
+     position: relative;
+     right:300px;
+     color: gray;
+   }
+   
+   footer .support {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     position: relative;
+     left: 300px;
+     bottom: 70px;
+     gap: 15px;
+     font-size: 14px;
+   }
+   
+   footer .support img {
+     width: 40px;
+     position: relative;
+     left: 10px;
+     top:-3px;
+    
+   }
+  .d{
+   position: relative;
+   right:140px;
+   top:10px ;
+  }
+  @media (max-width: 768px) {
+    body {
+        overflow: auto;
+    }
+
+    .one {
+        width: 70%;
+        margin: 40px auto;
+        height: auto;
+        padding-bottom: 20px;
+         top: 30px; 
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px;
+    }
+
+    nav img {
+        align-items: center;
+        position: relative;
+        right: 70px;
+    }
+
+    .logo {
+        flex-direction: column;
+        align-items: center;
+        left: 0;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        padding: 10px 0;
+    }
+
+    .nav-links a,
+    .auth a,
+    .auth button {
+        left: 0;
+        margin: 5px 0;
+        position: static;
+    }
+
+    .auth {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .text-content {
+        text-align: center;
+        padding: 10px;
+        margin: 0 auto;
+    }
+
+    .text-content h1,
+    .text-content p,
+    form input,
+    form button,
+    small {
+        margin-left: 0;
+        left: 0;
+        top: 0;
+        position: static;
+    }
+
+    form input {
+        width: 90%;
+    }
+
+    .text-content h1 {
+        font-size: 28px;
+        margin-top: 20px;
+    }
+
+    .text-content p {
+        font-size: 14px;
+    }
+
+    form {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    form input {
+        width: 90%;
+    }
+    small{
+        position: relative;
+        left: -20px;
+    }
+    small img{
+        align-items: center;
+    }
+
+    .image {
+        position: static;
+        margin-top: 20px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .image img {
+        width: 60%;
+        margin: 0 auto;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        position: static;
+        padding: 20px 10px;
+        margin-top: 20px;
+    }
+
+    footer p {
+        margin-bottom: 15px;
+        position: static;
+    }
+
+    footer .support {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+        position: static;
+    }
+
+    footer .support img {
+        width: 40px;
+        position: static;
+        margin: 0 auto;
+    }
+
+    .d {
+        position: static;
+    }
+
+    /* Centering icons8 image (Help Avatar) */
+    footer .support img:first-child {
+        margin: 0 auto;
+    }
+
+    /* Centering Group 1 image */
+    .image img {
+        width: 60%;
+        margin: 0 auto;
+    }
+}
